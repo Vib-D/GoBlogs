@@ -98,7 +98,7 @@ const CreatePost = () => {
       }
     } catch (err) {
       console.error('Error:', err);
-      setError(err.response?.data?.message || 'Something went wrong');
+      setError(err.response?.data?.message || 'Something went wrong | Try another image');
     }
   };
 
