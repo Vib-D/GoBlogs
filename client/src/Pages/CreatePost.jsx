@@ -80,13 +80,12 @@ const CreatePost = () => {
       return;
     }
 
-    const postData = {
-      title,
-      description,
-      bookAuthor,
-      category,
-      thumbnail, // Base64 string
-    };
+    const postData = new FormData()
+    postData.set('title', title)
+    postData.set('description', description)
+    postData.set('bookAuthor', bookAuthor)
+    postData.set('category', category)
+    postData.set('thumbnail', thumbnail)
 
     try {
       const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/posts`, postData, {
