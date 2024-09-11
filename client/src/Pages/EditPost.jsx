@@ -86,13 +86,12 @@ const EditPost = () => {
     setError('')
     const cleanedDescription = description.replace(/(?:\r\n|\t|\r|\n)/g, '  ')
 
-    const postData = {
-      title,
-      description: cleanedDescription,
-      bookAuthor,
-      category,
-      thumbnail // Base64 string
-    }
+    const postData = new FormData()
+    postData.set('title', title)
+    postData.set('description', description)
+    postData.set('bookAuthor', bookAuthor)
+    postData.set('category', category)
+    postData.set('thumbnail', thumbnail)
 
     try {
       const response = await axios.patch(`${process.env.REACT_APP_BASE_URL}/posts/${id}`, postData, {
