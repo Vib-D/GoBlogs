@@ -13,7 +13,7 @@ const app = express()
 
 app.use(express.json({extended: true}))
 app.use(express.urlencoded({extended: true}))
-app.use(cors({extended:true, origin: "https://goblogs-backend.onrender.com", credentials: true}))
+app.use(cors({extended:true, origin: "https://goblogs-5wm7.onrender.com", credentials: true}))
 app.use(upload())
 app.use('/uploads', express.static(__dirname + '/uploads'))
 
