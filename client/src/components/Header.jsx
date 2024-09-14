@@ -26,7 +26,6 @@ const Header = () => {
         </Link>
         {(window.innerWidth < 800) ? <h2 className='nav_title' onClick={closeNavHandler}> GoBlogs </h2> : <h2 className='nav_title'> </h2>} 
         {currentUser?.id && isNav && <ul className="nav_menu">
-          <li><Link to='/home' onClick={closeNavHandler} > Home </Link></li>
           <li><Link to={`/profile/${currentUser.id}`} onClick={closeNavHandler} >Profile</Link></li>
           <li><Link to='/create' onClick={closeNavHandler}>Create Post</Link></li>
           <li><Link to='/authors' onClick={closeNavHandler}>Authors</Link></li>
