@@ -31,7 +31,7 @@ const DeletePost = ({postId: id}) => {
         if(location.pathname === `/myposts/${currentUser.id}`){
           navigate(0)
         } else {
-          navigate('/home')
+          navigate('/')
         }
       }
       setIsLoading(false)
