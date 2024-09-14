@@ -7,7 +7,7 @@ const Footer = () => {
       <ul className="footer_categories">
         <li><Link to='/posts/categories/Journals'>Journals </Link></li>
         <li><Link to='/posts/categories/Fantasy'>Fantasy </Link></li>
-        <li><Link to='/posts/categories/Mystery'>Mistery </Link></li>
+        <li><Link to='/posts/categories/Mystery'>Mystery </Link></li>
         <li><Link to='/posts/categories/Fiction'>Fiction </Link></li>
         <li><Link to='/posts/categories/Thriller'> Thriller</Link></li>
         <li><Link to='/posts/categories/Non-Fiction'>Non-Fiction </Link></li>
