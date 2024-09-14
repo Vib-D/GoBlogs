@@ -22,7 +22,7 @@ const CreatePost = () => {
   // Redirect to login if not authenticated
   useEffect(() => {
     if (!token) {
-      navigate('/');
+      navigate('/login');
     }
   }, [navigate, token]);
 
@@ -93,7 +93,7 @@ const CreatePost = () => {
         headers: { Authorization: `Bearer ${token}` }
       });
       if (response.status === 201) {
-        navigate('/home');
+        navigate('/');
       }
     } catch (err) {
       console.error('Error:', err);
