@@ -22,7 +22,7 @@ const CreatePost = () => {
   // Redirect to login if not authenticated
   useEffect(() => {
     if (!token) {
-      navigate('/login');
+      navigate('/');
     }
   }, [navigate, token]);
 
