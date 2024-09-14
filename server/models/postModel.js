@@ -2,7 +2,7 @@ const {Schema, model} = require('mongoose')
 
 const postSchema = new Schema({
     title: {type: String, required: true},
-    thumbnail: {type: String},
+    thumbnail: {type: String, required: true},
     description: {type: String, required: true},
     bookAuthor: {type: String, required: true},
     creator: {type: Schema.Types.ObjectId, ref: "User"},
@@ -12,7 +12,7 @@ const postSchema = new Schema({
             'Uncategorized',
             'Journals',
             'Fantasy',
-            'Mistery',
+            'Mystery',
             'Fiction',
             'Thriller',
             'Non-Fiction',
