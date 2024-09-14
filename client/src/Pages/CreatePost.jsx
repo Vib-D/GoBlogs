@@ -60,7 +60,7 @@ const CreatePost = () => {
     'Uncategorized',
     'Journals',
     'Fantasy',
-    'Mistery',
+    'Mystery',
     'Fiction',
     'Thriller',
     'Non-Fiction',
