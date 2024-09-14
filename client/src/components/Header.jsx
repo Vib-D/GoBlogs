@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <nav>
       <div className="container nav_container">
-        <Link to='/home' className='nav_logo' onClick={closeNavHandler}>
+        <Link to='/' className='nav_logo' onClick={closeNavHandler}>
           <IoLibrarySharp />
         </Link>
         {(window.innerWidth < 800) ? <h2 className='nav_title' onClick={closeNavHandler}> GoBlogs </h2> : <h2 className='nav_title'> </h2>} 
