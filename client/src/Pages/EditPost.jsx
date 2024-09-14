@@ -99,7 +99,7 @@ const EditPost = () => {
         headers: { Authorization: `Bearer ${token}` }
       })
       if (response.status === 200) {
-        navigate('/home')
+        navigate('/')
       }
     } catch (err) {
       console.error('Error:', err)
